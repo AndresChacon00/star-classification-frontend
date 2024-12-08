@@ -26,7 +26,7 @@ const FileUpload = () => {
     <div className="flex flex-col items-center">
       <form
         onSubmit={handleSumit}
-        className="flex flex-col items-center bg-white p-6 rounded-lg"
+        className="flex flex-col items-center bg-white p-6 rounded-lg shadow-md"
       >
         <input
           type="file"

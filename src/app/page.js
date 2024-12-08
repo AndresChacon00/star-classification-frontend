@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import Head from "next/head";
+import FileUpload from "@/components/FileUpload";
 export default function Home() {
   return (
     <>
@@ -17,6 +18,9 @@ export default function Home() {
           <Link href={"/about"}>
             <p>about us</p>
           </Link>
+          <div className="mt-10">
+            <FileUpload />
+          </div>
         </div>
       </div>
     </>

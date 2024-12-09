@@ -15,10 +15,18 @@ export default function Home() {
           <div className="p-10 text-6xl text-white font-bold glow text-shadow">
             <h1>Clasificador de Estrellas</h1>
           </div>
+          <div>
           <Link href={"/about"}>
             <p>about us</p>
           </Link>
-          <div className="mt-10">
+          
+          <Link href={"/info"}>
+            <div className="fixed bottom-4 left-4">
+            <button className="bg-slate-500 text-white p-4 rounded-full shadow-lg">
+              Estrellas
+            </button>
+            </div>
+          </Link>
             <FileUpload />
           </div>
         </div>

@@ -98,14 +98,14 @@ const FileUpload = () => {
           </div>
         )}
         {response && (
-          <div className="mt-4 p-4 bg-white rounded shadow-md">
+          <div className="mt-4 p-4 bg-gray rounded shadow-md">
             <h2 className="text-lg font-bold">Respuesta de StarAPI</h2>
-            <pre className="text-sm text-gray-700">
+            <pre className="text-sm text-gray-300">
               {JSON.stringify(response, null, 2)}
             </pre>
             <button
               onClick={downloadCsv}
-              className="mt-4 bg-green-500 text-white px-4 py-2 rounded"
+              className="mt-4 bg-green-800 text-white px-4 py-2 rounded"
             >
               Descargar estrellas clasificadas
             </button>

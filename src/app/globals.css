@@ -47,3 +47,61 @@ body {
   transform: scale(1.15);
   transition: transform 0.15s ease-in-out;
 }
+
+p {
+  margin-left: 150px;
+  margin-right: 150px;
+  font-size: 1.2em;
+}
+
+input[type="file"] {
+  display: none;
+}
+
+.custom-file-upload {
+  display: inline-block;
+  width: 80%;
+  height: 200px;
+  box-sizing: border-box;
+  border: 2px solid #000000;
+  border-radius: 4px;
+  background-color: #464646;
+  font-size: 1em;
+  text-align: center;
+  line-height: 176px;
+  cursor: pointer;
+  transition: border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.custom-file-upload:hover {
+  border-color: #c5c5c5;
+  box-shadow: 0 0 5px rgba(85, 85, 85, 0.5);
+  outline: none;
+}
+
+/* Estilo del texto del botón */
+.upload-text {
+  color: #fff;
+  font-size: 1.2em;
+}
+
+.icon {
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 0;
+}
+
+.file-name {
+  margin: 0;
+  font-size: 1.em;
+}
+
+#cuadro-fuera {
+  border-radius: 30px;
+}
+
+#cuadro-dentro {
+  border-radius: 25px;
+  background-color: #464646;
+}

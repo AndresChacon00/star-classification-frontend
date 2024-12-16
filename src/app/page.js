@@ -17,7 +17,11 @@ export default function Home() {
           </div>
           <div>
           <Link href={"/about"}>
-            <p>about us</p>
+          <div className="fixed bottom-4 right-4">
+            <button className="bg-slate-500 text-white p-4 rounded-full shadow-lg">
+              Info
+            </button>
+          </div>
           </Link>
           
           <Link href={"/info"}>

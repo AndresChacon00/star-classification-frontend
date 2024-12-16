@@ -64,39 +64,41 @@ const FileUpload = () => {
   };
 
   return (
-    <div className="flex flex-col items-center  ">
-      <div className=" bg-zinc-900 w-1/2">
+    
+    <div className="items-center justify-center flex flex-col">
+
+      <div className='w-1/2 h-1/2 justify-center items-center mt-20'>
         <form
           onSubmit={handleSumit}
-          className="flex flex-col items-center bg-zinc-900 p-6 rounded-lg shadow-md"
+          className="flex flex-col items-center bg-zinc-900 p-5" id='cuadro-fuera'
         >
+
+        <label className="custom-file-upload m-4" id='cuadro-dentro'>
           <input
             type="file"
             accept=".csv"
             onChange={handleFileChange}
-            className="mb-4"
           />
+             <div className="flex flex-col items-center w-full h-full justify-center">
+              {file ? (
+                <>
+                  <img src="images/csv-green.svg" width="60" height="60" alt="Archivo cargado" className="mt-20" />
+                  <p className="absolute mb-10">{file.name}</p>
+                </>
+              ) : (
+                <img src="images/csv-file-icon 1.svg" width="90" height="90" alt="Seleccionar archivo" className="icon" />
+              )}
+            </div>
+        </label>
+
           <button
             type="submit"
-            className="bg-slate-500 text-white px-4 py-2 rounded"
+            className="bg-slate-500 text-white px-4 py-2 rounded mt-4"
           >
             Subir Archivo
           </button>
         </form>
-        {file && (
-          <div className="mt-4 flex flex-col items-center">
-            <p className="text-sm text-gray-300">
-              Archivo seleccionado: {file.name}
-            </p>
-            <Image
-              src="/images/uploadedCsv.png"
-              alt="Archivo cargado"
-              width={64}
-              height={64}
-              className="mt-2"
-            />
-          </div>
-        )}
+
         {response && (
           <div className="mt-4 p-4 bg-gray rounded shadow-md">
             <h2 className="text-lg font-bold">Respuesta de StarAPI</h2>

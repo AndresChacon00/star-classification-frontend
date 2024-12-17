@@ -64,32 +64,38 @@ const FileUpload = () => {
   };
 
   return (
-    
     <div className="items-center justify-center flex flex-col">
-
-      <div className='w-1/2 h-1/2 justify-center items-center mt-20'>
+      <div className="w-1/2 h-1/2 justify-center items-center mt-20">
         <form
           onSubmit={handleSumit}
-          className="flex flex-col items-center bg-zinc-900 p-5" id='cuadro-fuera'
+          className="flex flex-col items-center bg-zinc-900 p-5"
+          id="cuadro-fuera"
         >
-
-        <label className="custom-file-upload m-4" id='cuadro-dentro'>
-          <input
-            type="file"
-            accept=".csv"
-            onChange={handleFileChange}
-          />
-             <div className="flex flex-col items-center w-full h-full justify-center">
+          <label className="custom-file-upload m-4" id="cuadro-dentro">
+            <input type="file" accept=".csv" onChange={handleFileChange} />
+            <div className="flex flex-col items-center w-full h-full justify-center">
               {file ? (
                 <>
-                  <img src="images/csv-green.svg" width="60" height="60" alt="Archivo cargado" className="mt-20" />
+                  <img
+                    src="images/csv-green.svg"
+                    width="60"
+                    height="60"
+                    alt="Archivo cargado"
+                    className="mt-20"
+                  />
                   <p className="absolute mb-10">{file.name}</p>
                 </>
               ) : (
-                <img src="images/csv-file-icon 1.svg" width="90" height="90" alt="Seleccionar archivo" className="icon" />
+                <img
+                  src="images/csv-file-icon 1.svg"
+                  width="90"
+                  height="90"
+                  alt="Seleccionar archivo"
+                  className="icon"
+                />
               )}
             </div>
-        </label>
+          </label>
 
           <button
             type="submit"

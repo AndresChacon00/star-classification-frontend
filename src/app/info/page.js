@@ -10,13 +10,13 @@ const Info = () => {
                 <h1>Información</h1>
             </div>
             <div id="estrellas">
-                <img src="/path/to/image1.jpg" className="img-estrella" alt="Image 1" />
-                <img src="/path/to/image2.jpg" className="img-estrella" alt="Image 2" />
-                <img src="/path/to/image3.jpg" className="img-estrella" alt="Image 3" />
-                <img src="/path/to/image4.jpg" className="img-estrella" alt="Image 4" />
-                <img src="/path/to/image5.jpg" className="img-estrella" alt="Image 5" />
-                <img src="/path/to/image6.jpg" className="img-estrella" alt="Image 6" />
-                <img src="/path/to/image7.jpg" className="img-estrella" alt="Image 7" />
+                <img src="/images/enana_marron.jpg" className="img-estrella" alt="Image 1" />
+                <img src="/images/enana_roja.jpg" className="img-estrella" alt="Image 2" />
+                <img src="/images/enana_blanca.jpg" className="img-estrella" alt="Image 3" />
+                <img src="/images/secuencia_principal.jpg" className="img-estrella" alt="Image 4" />
+                <img src="/images/supergigante.jpg" className="img-estrella" alt="Image 5" />
+                <img src="/images/hipergigante.jpg" className="img-estrella" alt="Image 6" />
+                
             </div>
 
             <Link href={"/"}>

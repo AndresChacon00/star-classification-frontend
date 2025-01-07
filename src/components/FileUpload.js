@@ -4,6 +4,16 @@ import React, { useState } from 'react';
 import axios from 'axios';
 import Papa from 'papaparse';
 import Image from 'next/image';
+
+const starTypes = {
+  0: 'Enana marrón',
+  1: 'Enana roja',
+  2: 'Enana blanca',
+  3: 'Secuencia principal',
+  4: 'Supergigante',
+  5: 'Hipergigante',
+};
+
 const FileUpload = () => {
   const [file, setFile] = useState(null);
   const [response, setResponse] = useState(null);
@@ -65,7 +75,7 @@ const FileUpload = () => {
 
   return (
     <div className="items-center justify-center flex flex-col">
-      <div className="w-1/2 h-1/2 justify-center items-center mt-20">
+      <div className="w-1/2 h-1/2 justify-center items-center mt-10">
         <form
           onSubmit={handleSumit}
           className="flex flex-col items-center bg-zinc-900 p-5"
@@ -109,7 +119,11 @@ const FileUpload = () => {
           <div className="mt-4 p-4 bg-gray rounded shadow-md">
             <h2 className="text-lg font-bold">Respuesta de StarAPI</h2>
             <pre className="text-sm text-gray-300">
-              {JSON.stringify(response, null, 2)}
+              {response.map((prediction, index) => (
+                <p key={index}>
+                  Estrella #{index + 1}: {starTypes[prediction]}
+                </p>
+              ) )}
             </pre>
             <button
               onClick={downloadCsv}

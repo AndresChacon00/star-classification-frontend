@@ -35,6 +35,14 @@ export default function Home() {
                 Descargar Plantilla CSV
               </a>
             </div>
+            <div className="mt-10 text-white">
+              <p>Brown Dwarf {"->"} Star Type = 0</p>
+              <p>Red Dwarf {"->"} Star Type = 1</p>
+              <p>White Dwarf {"->"} Star Type = 2</p>
+              <p>Main Sequence {"->"} Star Type = 3</p>
+              <p>Supergiant {"->"} Star Type = 4</p>
+              <p>Hypergiant {"->"} Star Type = 5</p>
+            </div>
           </div>
           <div>
             <Link href={"/about"}>

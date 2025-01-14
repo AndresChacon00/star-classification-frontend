@@ -17,7 +17,7 @@ export default function Home() {
           </div>
           <div className="flex flex-col items-center">
             <p className="pb-0 mb-2">
-              Carga tu archivo scv con los datos de las estrellas en el formato:
+              Carga tu archivo csv con los datos de las estrellas en el formato:
             </p>
             <img
               src="images/example.png"
